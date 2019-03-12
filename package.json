@@ -1,0 +1,24 @@
+{
+  "name": "json-reform",
+  "version": "1.0.0",
+  "description": "A mini NodeJS lib that helps you map JSON objects easier and faster.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andycillin/json-reform.git"
+  },
+  "keywords": [
+    "json",
+    "mapper",
+    "schema"
+  ],
+  "author": "Andy Tran <andy.tran11996@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Andycillin/json-reform/issues"
+  },
+  "homepage": "https://github.com/Andycillin/json-reform#readme"
+}
