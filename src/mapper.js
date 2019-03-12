@@ -1,3 +1,9 @@
+/*
+ * json-reform
+ * Copyright (c) 2019 Andy Tran (https://github.com/andycillin/json-reform)
+ * MIT Licensed
+ */
+
 "use strict";
 const {isFunction} = require('./helper');
 
