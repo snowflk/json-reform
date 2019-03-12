@@ -130,6 +130,26 @@ Output:
 { f: 7, e: 6, d: 4, b: 2, g: 0 }
 ```
 
+You can also transform an array of objects
+
+```javascript
+const result = re.transform([{a: 1, b: 2, c: 3, d: 5, g: 0}]);
+```
+
+Output:
+```javascript
+[
+    { f: 7, e: 6, d: 4, b: 2, g: 0 }
+]
+```
+
+When `async` option is `true`:
+```javascript
+re.transform([{a: 1, b: 2, c: 3, d: 5, g: 0}])
+    .then(res => {
+        // Do something
+    })
+```
 
 ## License
 
