@@ -126,7 +126,7 @@ console.log(result);
 ```
 
 Output:
-```json
+```javascript
 { f: 7, e: 6, d: 4, b: 2, g: 0 }
 ```
 
