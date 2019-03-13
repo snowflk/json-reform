@@ -94,7 +94,7 @@ Name|Type|Default|Description
 :-----------|:------|:----|:-----------
 keepUnlisted|Boolean|false|Attributes of origin object that are not listed in schema will be kept.
 async       |Boolean|false|transform() function will return a Promise. This option must be set to true when you are using any asynchronous function
-
+sequential  |Boolean|false|When an array of objects is passed to transform() function, those will be transformed **one after another**. This may help to avoid overhead when you are sending network requests. 
 ## Example
 
 ```javascript

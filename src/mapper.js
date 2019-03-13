@@ -13,7 +13,8 @@ function Reformer(rules, opts = {}) {
     this.rules = rules;
     this.settings = {
         keepUnlisted: false,
-        async: false
+        async: false,
+        sequential: false
     };
 
     this.settings = {...this.settings, ...opts};
@@ -129,11 +130,27 @@ Reformer.prototype.transform = function (obj) {
     const t = this.compile(this.rules);
 
     if (Array.isArray(obj)) {
+
+        if (this.settings.sequential && this.settings.async) {
+            let currentPromise = Promise.resolve([]);
+            obj.forEach(o => {
+                currentPromise = currentPromise.then(res => t(o).then(r => [...res, r]));
+            });
+            return currentPromise;
+        }
+
         let promises = [];
         obj.forEach(o => {
             promises.push(t(o));
         });
-        return Promise.all(promises);
+
+        if (this.settings.async) {
+            return Promise.all(promises);
+        }
+
+        return promises;
+
+
     }
     return t(obj);
 };
