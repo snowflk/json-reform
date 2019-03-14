@@ -1,6 +1,6 @@
 {
   "name": "json-reform",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A mini NodeJS lib that helps you map JSON objects easier and faster.",
   "private": true,
   "scripts": {
