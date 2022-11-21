@@ -2,6 +2,7 @@
 
 A mini NodeJS library that helps you transform JSON objects faster & easier. 
 
+**Note**: This repository is deprecated. [Shapeshifter.js](https://github.com/necrobits/shapeshifter.js) is the newer version of Reform.
 ## Installation
 Using NPM:
 ```
